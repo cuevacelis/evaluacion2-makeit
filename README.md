@@ -16,13 +16,13 @@ Se realizó lo propuesto en https://github.com/makeitrealcamp/assesment-2-progra
 
 ### Register
 
-POST
-url:3000/auth/local/register
-{
-email:""
-password:""
-}
-password > 8 caracteres
+- POST
+- url:3000/auth/local/register
+  {
+  email:""
+  password:""
+  }
+- password > 8 caracteres
 
 ### Login
 
