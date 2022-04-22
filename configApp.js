@@ -12,6 +12,7 @@ class ConfigApp {
       auth: "/auth/local",
       listOfFavorites: "/api/favs",
     };
+    console.log("Cargando...");
     this.conectarDB();
     this.middlewares();
     this.routes();

@@ -11,7 +11,6 @@ const generarJWT = (data) => {
       },
       (err, token) => {
         if (err) {
-          console.log(err);
           rejected("Error token generate");
         } else {
           resolve(token);

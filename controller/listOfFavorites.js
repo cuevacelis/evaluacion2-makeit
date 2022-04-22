@@ -48,7 +48,6 @@ const createListFavorites = async (req, res) => {
       user: tokenDecode.data,
       name: list.name,
     };
-    console.log(dataNewList);
     const listNew = new List(dataNewList);
     await listNew.save();
 
