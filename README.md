@@ -2,11 +2,11 @@
 
 Se realizó lo propuesto en https://github.com/makeitrealcamp/assesment-2-programa-top#1-challenge
 
-Hola CEO de FAVS el proyecto esta terminado descarga el codigo, te suguiero que vayas a la parte derecha superior en el boton verde que dice "code" le des click y posteriormente "download zip".
+Hola CEO de FAVS el proyecto está terminado descarga el código, te sugiero que vayas a la parte derecha superior en el botón verde que dice "code" le des click y posteriormente "download zip".
 
-Una vez descargado el proyecto, descomprimelo y posteriormente a eso tienes que instalar "NodeJS" desde su pagina oficial https://nodejs.org/es/download/ la opción que dice LTS.
+Una vez descargado el proyecto, descomprímelo y posteriormente a eso tienes que instalar "NodeJS" desde su página oficial https://nodejs.org/es/download/ la opción que dice LTS.
 
-Si tienes windows lo único que tienes que hacer es descargarlo y darle siguiente siguiente, caso contrario hay muchos recursos en youtube de como instalar NodeJS en diferentes sistemas operativos(Windows,Mac,Linux,etc).
+Si tienes Windows lo único que tienes que hacer es descargarlo y darle siguiente siguiente, caso contrario hay muchos recursos en YouTube de como instalar NodeJS en diferentes sistemas operativos (Windows ,Mac, Linux, etc).
 
 Una vez instalado NodeJS ve hacia la carpeta que descargaste en el primer paso, da click derecho y posteriormente "click en abrir terminal".
 
@@ -16,7 +16,7 @@ En caso no te aparezca la opción sugiero lo siguiente:
 - Copia la ruta que aparece en la parte superior, en mi caso esta es la ruta C:\Users\cueva\Downloads\trabajo
 - En los programas busca CMD o Powershell y da click en abrir.
 - Escribe el siguiente comando sin comillas: "cd $ruta"
-- En mi caso seria algo así: "cd C:\Users\cueva\Downloads\trabajo"
+- En mi caso sería algo así: "cd C:\Users\cueva\Downloads\trabajo"
 - Dale enter y listo.
 
 Una vez en la terminal ejecuta estos dos comandos:
@@ -26,9 +26,9 @@ Una vez en la terminal ejecuta estos dos comandos:
 
 Te debe salir un mensaje que diga lo siguiente: "¡Todo correcto, ya puedes usar el servicio!", en caso el mensaje no te salga comunicate conmigo.
 
-¡Excelente! el servicio se esta ejecutando,no cierres la temrinal en la que estas.
+¡Excelente! el servicio se esta ejecutando,no cierres la terminal en la que estas.
 
-Ahora para poder usar el servicio sigue las instrucciones de la parte de abajo del documento como vez esta todo lo que se solicito como requerimiento.
+Ahora para poder usar el servicio sigue las instrucciones de la parte de abajo del documento, como vez esta todo lo que se solicitó como requerimiento.
 
 Saludos.
 
