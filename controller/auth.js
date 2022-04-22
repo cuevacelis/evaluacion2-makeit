@@ -1,6 +1,5 @@
 const bcryptjs = require("bcryptjs");
 const { generarJWT } = require("../helpers/generar-jwt");
-
 const User = require("../models/user");
 
 const login = async (req, res) => {
@@ -10,6 +9,7 @@ const login = async (req, res) => {
 
     if (!user) {
       return res.status(400).json({
+        status: "error",
         msg: "user o pass incorrect",
       });
     }
@@ -17,6 +17,7 @@ const login = async (req, res) => {
 
     if (!validPassword) {
       return res.status(400).json({
+        status: "error",
         msg: "user o pass incorrect",
       });
     }
@@ -24,12 +25,13 @@ const login = async (req, res) => {
     const tokenJWT = await generarJWT(user.id);
 
     res.json({
+      status: "success",
       msg: "login succeful",
       tokenJWT,
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).json({
+      status: "error",
       msg: "Error Login",
     });
   }
@@ -43,6 +45,7 @@ const register = async (req, res) => {
 
     if (userFind) {
       return res.status(400).json({
+        status: "error",
         msg: "Este usuario ya existe",
       });
     }
@@ -51,7 +54,8 @@ const register = async (req, res) => {
 
     if (password.length < 8) {
       return res.status(400).json({
-        msg: "La pass es menor a 8 caracteres",
+        status: "error",
+        msg: "La pass debe ser mayor a 8 caracteres",
       });
     }
 
@@ -60,12 +64,13 @@ const register = async (req, res) => {
 
     await user.save();
     res.status(200).json({
+      status: "success",
       msg: "Usuario creado",
       user,
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).json({
+      status: "error",
       msg: "Error Register",
     });
   }
