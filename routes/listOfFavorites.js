@@ -1,21 +1,27 @@
 var express = require("express");
 var router = express.Router();
 const isAuthenticated = require("../middlewares/validar-jwt");
+const {
+  createListFavorites,
+  deleteOneListFavorites,
+  getListFavorites,
+  getOneListFavorites,
+} = require("../controller/listOfFavorites");
 
 router.get("/", isAuthenticated, function (req, res, next) {
-  res.send("Obtener toda la lista de favoritos");
+  getListFavorites(req, res);
 });
 
 router.post("/", isAuthenticated, function (req, res, next) {
-  res.send("-Crea una nueva lista de favoritos");
+  createListFavorites(req, res);
 });
 
 router.get("/:id", isAuthenticated, function (req, res, next) {
-  res.send("Obtener una lista de favoritos :id");
+  getOneListFavorites(req, res);
 });
 
 router.delete("/:id", isAuthenticated, function (req, res, next) {
-  res.send("Eliminar uns lista de favoritos :id");
+  deleteOneListFavorites(req, res);
 });
 
 module.exports = router;
