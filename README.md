@@ -2,13 +2,22 @@
 
 Se realizó lo propuesto en https://github.com/makeitrealcamp/assesment-2-programa-top#1-challenge
 
-Hola CEO de favs el proyecto lo puedes ejecutar bajando el codigo o clonandolo, te suguiero que vayas a la parte derecha superior en el boton verde que dice "code" le des click y posteriormente "download zip".
+Hola CEO de FAVS el proyecto esta terminado descarga el codigo, te suguiero que vayas a la parte derecha superior en el boton verde que dice "code" le des click y posteriormente "download zip".
 
-Una vez descargado el proyecto necesito que instales NodeJS desde su pagina oficial https://nodejs.org/es/download/
+Una vez descargado el proyecto, descomprimelo y posteriormente a eso tienes que instalar "NodeJS" desde su pagina oficial https://nodejs.org/es/download/ la opción que dice LTS.
 
-Si tienes windows lo unico que tienes que hacer es derargarlo y darle siguiente siguiente caso contrario hay muchos recursos en youtube de como instalar NodeJS.
+Si tienes windows lo único que tienes que hacer es descargarlo y darle siguiente siguiente, caso contrario hay muchos recursos en youtube de como instalar NodeJS en diferentes sistemas operativos(Windows,Mac,Linux,etc).
 
-Una vez instalado NodeJS ve hacia la carpeta que descargaste en el primer paso y da click derecho y posteriormente "click en abrir terminal".
+Una vez instalado NodeJS ve hacia la carpeta que descargaste en el primer paso, da click derecho y posteriormente "click en abrir terminal".
+
+En caso no te aparezca la opción sugiero lo siguiente:
+
+- Abre la carpeta con el proyecto
+- Copia la ruta que aparece en la parte superior, en mi caso esta es la ruta C:\Users\cueva\Downloads\trabajo
+- En los programas busca CMD o Powershell y da click en abrir.
+- Escribe el siguiente comando sin comillas: "cd $ruta"
+- En mi caso seria algo así: "cd C:\Users\cueva\Downloads\trabajo"
+- Dale enter y listo.
 
 Una vez en la terminal ejecuta estos dos comandos:
 
