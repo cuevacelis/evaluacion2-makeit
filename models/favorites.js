@@ -20,9 +20,4 @@ const FavoritesSchema = Schema({
   },
 });
 
-FavoritesSchema.methods.toJSON = function () {
-  const { __v, ...favorites } = this.toObject();
-  return favorites;
-};
-
-module.exports = model("Usuario", FavoritesSchema);
+module.exports = model("Favorites", FavoritesSchema);
