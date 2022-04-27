@@ -23,11 +23,12 @@ const login = async (req, res) => {
     }
 
     const tokenJWT = await generarJWT(user.id);
+    const envio = `Bearer ${tokenJWT}`;
 
     res.json({
       status: "success",
       msg: "login succeful",
-      tokenJWT,
+      envio,
     });
   } catch (error) {
     return res.status(500).json({
